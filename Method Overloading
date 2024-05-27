@@ -1,0 +1,49 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.Remoting.Services;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BassicProgram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Customer c=new Customer();
+            c.print("vrusahbh");
+            c.print(154);
+            c.print("kawale");
+            int i = 150;
+            c.print(ref i);
+
+
+
+            Console.ReadLine();
+        }
+    }
+
+    public class Customer
+    {
+        public void print()
+        {
+            Console.WriteLine("print");
+        }
+        public void print(int a)
+        {
+            Console.WriteLine( "print A");
+        }
+        public void print (string a)
+        {
+            Console.WriteLine(" print string");
+        }
+        public void print(ref int i)
+        {
+            Console.WriteLine(" ref i ");
+        }
+    }
+}
