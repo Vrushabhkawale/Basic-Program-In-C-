@@ -1,0 +1,27 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.Remoting.Services;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BassicProgram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List <int>tem= new List<int>();
+            tem.Add(200);
+            for(int i = 0; i < tem.Count; i++)
+            {
+                Console.WriteLine(tem[i]);
+            }
+          
+
+            Console.ReadLine();
+        }
+    }
+}
