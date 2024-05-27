@@ -1,0 +1,48 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.Remoting.Services;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BassicProgram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Interface1 V = new gold();
+            V.User();
+
+            V = new silver();
+            V.User();
+
+            Console.ReadLine();
+        }
+    }
+
+   
+}
+
+*********** Interface ******************
+internal interface Interface1
+{
+    void User();
+}
+public class gold: Interface1
+{
+    public void User()
+    {
+        Console.WriteLine(  " gold class");
+    }
+}
+public class silver : Interface1
+{
+    public void User()
+    {
+        Console.WriteLine( " silver class ");
+    }
+}
+    
